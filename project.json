@@ -1,0 +1,36 @@
+{
+  "file": "index.html",
+  "title": "Painel",
+  "type": "web",
+  "description": "Painel bento: relógio, clima, calendário, progresso, notas e mídia.",
+  "general": {
+    "properties": {
+      "tema": { "order": 1, "text": "Tema", "type": "combo", "value": "grafite",
+        "options": [
+          { "label": "Grafite", "value": "grafite" },
+          { "label": "Noite", "value": "noite" },
+          { "label": "Aurora", "value": "aurora" },
+          { "label": "Claro", "value": "claro" }
+        ] },
+      "fonte": { "order": 2, "text": "Fonte", "type": "combo", "value": "moderno",
+        "options": [
+          { "label": "Moderno", "value": "moderno" },
+          { "label": "Elegante", "value": "elegante" },
+          { "label": "Tech", "value": "tech" },
+          { "label": "Pixel", "value": "pixel" }
+        ] },
+      "layout": { "order": 3, "text": "Layout", "type": "combo", "value": "centro",
+        "options": [
+          { "label": "Centro", "value": "centro" },
+          { "label": "Canto", "value": "canto" }
+        ] },
+      "cor": { "order": 4, "text": "Cor de destaque", "type": "color", "value": "0.45 0.75 1" },
+      "nome": { "order": 5, "text": "Seu nome (saudação)", "type": "textinput", "value": "" },
+      "cidade": { "order": 6, "text": "Cidade (clima)", "type": "textinput", "value": "Votorantim" },
+      "formato24h": { "order": 7, "text": "Relógio 24h", "type": "bool", "value": true },
+      "segundos": { "order": 8, "text": "Mostrar segundos", "type": "bool", "value": false },
+      "popup": { "order": 9, "text": "Pop-up de mídia", "type": "bool", "value": true },
+      "notas": { "order": 10, "text": "Notas", "type": "textinput", "value": "" }
+    }
+  }
+}

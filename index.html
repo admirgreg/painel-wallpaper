@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-tema="grafite" data-fonte="moderno" data-layout="centro">
+  <main id="painel">
+    <div id="grade">
+
+      <section id="relogio-box">
+        <div id="saudacao">—</div>
+        <div id="relogio">
+          <span id="hh" class="vt">--</span><span id="dp" class="vt">:</span><span id="mm" class="vt">--</span>
+        </div>
+        <div id="seg"></div>
+      </section>
+
+      <section class="card vidro" id="data-card">
+        <div id="dia-semana">—</div>
+        <div id="data">--/--/----</div>
+        <div id="meta"><span id="semana"></span><span id="trimestre"></span></div>
+      </section>
+
+      <section class="card vidro" id="clima-card" data-clima="nublado" data-turno="dia">
+        <div class="ceu">
+          <i class="astro"></i>
+          <i class="nuvem n1"></i><i class="nuvem n2"></i><i class="nuvem n3"></i>
+          <i class="chuva"></i><i class="raio"></i>
+        </div>
+        <div class="clima-conteudo">
+          <div id="clima-desc"></div>
+          <div id="clima-temp"></div>
+          <div id="clima-minmax"></div>
+        </div>
+      </section>
+
+      <section class="card vidro" id="calendario-box">
+        <h2 id="cal-titulo">Calendário</h2>
+        <div id="cal-grade"></div>
+      </section>
+
+      <section class="card vidro" id="progresso">
+        <div class="pr"><div class="pr-topo"><span>Hoje</span><b id="pr-hoje-v">0%</b></div><div class="pontos" id="pr-hoje"></div></div>
+        <div class="pr"><div class="pr-topo"><span>Mês</span><b id="pr-mes-v">0%</b></div><div class="pontos" id="pr-mes"></div></div>
+        <div class="pr"><div class="pr-topo"><span>Ano</span><b id="pr-ano-v">0%</b></div><div class="pontos" id="pr-ano"></div></div>
+      </section>
+
+      <section class="card vidro" id="musica-card">
+        <img id="capa" alt="">
+        <div class="musica-info">
+          <div id="titulo">Nada tocando</div>
+          <div id="artista"></div>
+        </div>
+        <div class="musica-rodape">
+          <div id="barra"><div id="barra-fill"></div></div>
+          <div id="tempo"><span id="t-pos">0:00</span><span id="t-dur">0:00</span></div>
+        </div>
+      </section>
+
+      <section class="card vidro" id="notas-box">
+        <h2>Notas</h2>
+        <div id="notas" contenteditable="true" spellcheck="false"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/modules/saudacao.js"></script>
+  <script src="js/modules/relogio.js"></script>
+  <script src="js/modules/clima.js"></script>
+  <script src="js/modules/calendario.js"></script>
+  <script src="js/modules/progresso.js"></script>
+  <script src="js/modules/midia.js"></script>
+  <script src="js/modules/notas.js"></script>
+  <!-- Futuro: <script src="js/modules/hardware.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+</html>
